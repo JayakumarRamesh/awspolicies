@@ -28,3 +28,13 @@
     }
   ]
 }
+
+
+kms:
+"Action": [
+"kms:Encrypt",
+"kms:Decrypt",
+"kms:ReEncrypt*",
+"kms:GenerateDataKey*",
+"kms:DescribeKey"
+]
