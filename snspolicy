@@ -38,3 +38,24 @@ kms:
 "kms:GenerateDataKey*",
 "kms:DescribeKey"
 ]
+
+
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1599072922054",
+    "Statement": [
+        {
+            "Sid": "Stmt1599072920618",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::026787505469:root",
+                    "arn:aws:iam::101425307412:role/crossaccountaccess",
+                    "arn:aws:iam::026787505469:user/kibanakumar"
+                ]
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::testingjkbucket1/*"
+        }
+    ]
+}
